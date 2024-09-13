@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Editable Resume builder by Umama shaikh</h1>
+    </header>
+    <form id="resumeform">
+        <!-- personal information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="Name" id="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="Email" id="email" required><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="tel" id="phone" required>
+        </fieldset>
+        <!-- education section -->
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education</label>
+            <textarea name="Education" id="education" rows="4" required></textarea><br>
+        </fieldset>
+
+        <!-- Experience section -->
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience</label>
+            <textarea name="Experience" id="experience" rows="4" required></textarea><br>
+        </fieldset>
+        <!-- skills section -->
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills</label>
+            <textarea name="skills" id="skills" rows="4" required></textarea><br>
+        </fieldset>
+
+        <button type="submit">Build Your Resume</button>
+    </form>
+    <br>
+    <!-- editable and dynamic resume -->
+    <div id="resumeDisplay" contenteditable="true">
+        <!-- generated resume will show here -->
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
